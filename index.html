@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="icon" type="image/png" href="./assets/ico.png">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>beta-1.0.2-test-phase</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./encrypt.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+
+</head>
+
+<body>
+ 
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Select your icon</h2>
+            <div class="grid-container">
+                
+                
+                <div class="grid-item"><img class="image" onclick="Icoimg('./icons/5.jpg')" src="./icons/5.jpg" alt="SA-3"></div>
+                <div class="grid-item"><img class="image" onclick="Icoimg('./icons/6.jpg')" src="./icons/6.jpg" alt="SA-2"></div>
+                <div class="grid-item"><img class="image" onclick="Icoimg('./icons/2.jpg')" src="./icons/2.jpg" alt="SA-1"></div>
+                <div class="grid-item"><img class="image" onclick="Icoimg('./icons/3.jpg')" src="./icons/3.jpg" alt="LL-1"></div>
+                <div class="grid-item"><img class="image" onclick="Icoimg('./icons/4.jpg')" src="./icons/4.jpg" alt="LL-2"></div>
+                <div class="grid-item"><img class="image" onclick="Icoimg('./icons/1.jpg')" src="./icons/1.jpg" alt="Cat"></div>
+  
+
+
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+    <script>
+        window.addEventListener("load", () => {
+            const preloader = document.querySelector(".preloader");
+            preloader.style.display = "none"; // Hide the pre-loader when content is loaded
+        });
+    </script>
+    <header>
+        <div class="head">
+            <h1>beta-1.0.1-test-phase</h1>
+        </div>
+    </header>
+    <section>
+        <div class="main">
+            <div class="maininmain" id="chat-box">
+
+
+
+            </div>
+
+
+        </div>
+        <div class="form">
+            <form onsubmit="handleFormSubmit(event)">
+                <input type="text" id="message-input" placeholder="Type your message..." autofocus="true">
+                <button><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                        <path d="M97-136v-248l336-96-336-98v-246l813 344L97-136Z" />
+                    </svg> </button>
+            </form>
+
+        </div>
+
+
+    </section>
+
+
+
+    <div class="credits">
+        <p class="left-c">We Use <span>Advanced Encryption Standard(AES).</span></p>
+
+        <p class="right-c">From Kousic.</p>
+
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
