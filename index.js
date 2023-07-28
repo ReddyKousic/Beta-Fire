@@ -50,13 +50,7 @@ const simpleCrypto = new SimpleCrypto(secretKey);
 var firebaseConfig = {
 
 
-    authDomain: "chatwego.firebaseapp.com",
-    databaseURL: "https://chatwego-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "chatwego",
-    storageBucket: "chatwego.appspot.com",
-    messagingSenderId: "330841690601",
-    appId: "1:330841690601:web:1580dab9da7507d6feblob78",
-    measurementId: "G-35M6MYG5LY"
+    [<FIREBASE CREDENTIALS>]
 };
 
 firebase.initializeApp(firebaseConfig);
